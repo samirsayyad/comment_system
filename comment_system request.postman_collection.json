@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "4896830d-8885-47a4-ae02-b143cf24e99c",
+		"name": "comment_system request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "adsfaf",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "5e50e3e7bd15ed613f8c964b",
+							"type": "text"
+						},
+						{
+							"key": "ref_id",
+							"value": "5e50e3e7bd15ed613f8c964c",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/comments/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments",
+						""
+					]
+				},
+				"description": "Request postman"
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comments/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

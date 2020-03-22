@@ -16,12 +16,11 @@ var CommentSchema = new Schema({
       default: Date.now
     },
     ref_id: {
-      type: [{
-        type: Schema.Types.ObjectId,
-        default : null ,
-      }],
-      
+      type:  Schema.Types.ObjectId,
+      default : null ,
     }
+      
+    
   });
   
   module.exports = mongoose.model('Comments', CommentSchema);

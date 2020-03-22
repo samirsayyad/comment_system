@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/samirsayyad/comment_system/issues"
   },
-  "homepage": "https://github.com/samirsayyad/comment_system#readme"
+  "homepage": "https://github.com/samirsayyad/comment_system#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -25,7 +25,7 @@ var CommentSchema = new Schema({
   
 
   var commentModel = mongoose.model('Comments', CommentSchema);
-  
+
   CommentSchema.path('ref_id').validate(
     
     
@@ -40,6 +40,8 @@ var CommentSchema = new Schema({
                 resolve(true);
               }
             })
+        }else {
+          resolve(true);
         }
       }),
       message: 'Comments level limit has been reached.'
